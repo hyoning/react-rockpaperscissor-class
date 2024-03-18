@@ -22,8 +22,8 @@ const choice = {
   }
 }
 function App() {
-  const [userSelect, setUserSelect] = useState(null)
-  const [couputerSelect, setComputerSelect] = useState(null)
+  const [userSelect, setUserSelect] = useState(choice.scissors)
+  const [computerSelect, setComputerSelect] = useState(choice.scissors)
   const [result, setResult] = useState("")
   const play = (userChoice) =>{
     setUserSelect(choice[userChoice])
@@ -50,14 +50,15 @@ function App() {
   }
   return (
     <div className="wrap">
-      <div className="main">
-      <Box title="You" item={userSelect} result={result}/>
-      <Box title="Computer" item={couputerSelect} result={result}/>
-      </div>
+      <div className="title">가위 바위 보 게임!<p>아래 버튼을 눌러 가위,바위,보 게임을 해봐!</p></div>
       <div className='buttonWrap'>
         <button className="button-scissors" onClick={() => play("scissors")}>가위</button>
         <button className="button-rock" onClick={() => play("rock")}>바위</button>
         <button className="button-paper"  onClick={() => play("paper")}>보</button>
+      </div>
+      <div className="main">
+        <Box title="You" item={userSelect} result={result}/>
+        <Box title="Computer" item={computerSelect} result={result}/>
       </div>
     </div>
   );

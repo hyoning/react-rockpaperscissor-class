@@ -7,6 +7,15 @@
     flex-direction: column;
     gap:5%;
 }
+.title{
+    font-size:36px;
+    text-align: center;
+    font-weight: 600;
+}
+.title p{
+    font-size:18px;
+    font-weight: 300;
+}
 .main{
     display: flex;
     justify-content: center;
