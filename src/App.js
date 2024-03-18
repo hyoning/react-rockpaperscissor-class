@@ -30,16 +30,16 @@ function App() {
     let couputerChoice = randomChoice()
     setComputerSelect(couputerChoice)
     setResult(judgement(choice[userChoice], couputerChoice))
-  }
+  } 
   const judgement = (user, computer) => {
-    if(user.name == computer.name){
+    if(user.name === computer.name){
       return "Tie"
-    } else if(user.name == "Rock"){
-      return computer.name == "Scissors" ? "Win" : "Lose";
-    } else if(user.name == "Scissors"){
-      return computer.name == "Paper" ? "Win" : "Lose";
-    } else if(user.name == "Paper"){
-      return computer.name == "Rock" ? "Win" : "Lose";
+    } else if(user.name === "Rock"){
+      return computer.name === "Scissors" ? "Win" : "Lose";
+    } else if(user.name === "Scissors"){
+      return computer.name === "Paper" ? "Win" : "Lose";
+    } else if(user.name === "Paper"){
+      return computer.name === "Rock" ? "Win" : "Lose";
     }
   }
   const randomChoice = () => {
