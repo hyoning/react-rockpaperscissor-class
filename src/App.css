@@ -1,27 +1,85 @@
+.wrap{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5%;
+}
 .main{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:4%;
+    gap:2%;
+    width: 100%;
 }
 .buttonWrap{
     display: flex;
     justify-content: center;
 }
 .box{
-    border:1px solid black;
-    width:48%;
-    max-width: 300px;
+    background:#ddd;
+    width:30%;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size:4vw;
+    line-height: 1.2;
+    margin:15% 0 2%;
+    color:#fff;
+}
+.item-name{
+    font-size:3vw;
+    line-height: 1.2;
+    margin-bottom:20px;
+    color:#fff;
+}
+.item-result{
+    font-size:3vw;
+    line-height: 1.2;
+    padding:2% 0 15%;
+    font-weight: 600;
+    color:#fff;
 }
 .item-img{
     height: 100px;
 }
 .Win{
-    border:5px solid green;
+    background-color: #1A8400;
 }   
 .Lose{
-    border:5px solid red;
+    background-color:#ff2441;
 }
 .Tie{
-    border:5px solid black
+    background-color: #ddd;
+}
+.buttonWrap{
+    display: flex;
+    gap:5px;
+}
+.buttonWrap button{
+    font-size:0;
+    line-height: 0;
+    width:50px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    border:0;  
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.button-scissors{
+    background: #222 url('../public/img/scissors.png') no-repeat;
+}
+.button-rock{
+    background: #222 url('../public/img/rock.png') no-repeat;
+}
+.button-paper{
+    background: #222 url('../public/img/paper.png') no-repeat;
 }
