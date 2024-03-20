@@ -27,9 +27,9 @@ function App() {
   const [result, setResult] = useState("")
   const play = (userChoice) =>{
     setUserSelect(choice[userChoice])
-    let couputerChoice = randomChoice()
-    setComputerSelect(couputerChoice)
-    setResult(judgement(choice[userChoice], couputerChoice))
+    let computerChoice = randomChoice()
+    setComputerSelect(computerChoice)
+    setResult(judgement(choice[userChoice], computerChoice))
   } 
   const judgement = (user, computer) => {
     if(user.name === computer.name){
